@@ -8,13 +8,11 @@ window=Tk() # create the window
 
 # set up the functions
 
-e1_value=stringVar()
-
 
 def kg_to_pound():
-    print(e1_value.get()) #print whatever's in weightinput
-    pounds=e1_value.get()*2.20462
-    t1.insert(END,pounds)
+    print(e1_value.get()) #print whatever's in e1
+    pounds=e1_value.get()*2.20462 # convert to pounds
+    t1.insert(END,pounds) # in t1, insert that amount
 
 # ================
 # conversions:
@@ -22,14 +20,16 @@ def kg_to_pound():
 # 1 kg = 2.20462 pounds
 # 1 kg = 35.274 ounces
 # ==================
-
+e1_value=StringVar()
 
 # set up a 3 column (w) by 2 column (tall)
 
 # define buttons
 b1 = Button(window,textvariable=e1_value)
     # grid
+t1=Text(window,height=1,width=20)
 t1.grid(row=0,column=2)
+
 
 
 window.mainloop() #required for all windows to draw
