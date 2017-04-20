@@ -23,27 +23,43 @@ def kg_to_pound():
     t1.insert(END,pounds) # in t1, insert that amount
 
 # convert to ounces
-# ...
+def kg_to_oz():
+    print(e1_value.get()) # print what's in e1
+    ozs=float(e1_value.get())*35.274
+    t1.insert(END,ozs)
+
 # convert to grams
-# ...
+def kg_to_grams():
+    print(e1_value.get()) #print what's in e1
+    grams=float(e1_value.get())*1000
+    t1.insert(END,grams)
 
 e1_value=StringVar()
 
 # set up a 3 column (w) by 2 column (tall)
-
+#
 # define buttons
-b1 = Button(window,textvariable=e1_value)
-b1.pack() #(why is this needed?)
-b1.grid(row=0,column=0) #place button here
+# use text not textvariable here!
+b1 = Button(window,text="convert to pounds",command=kg_to_pound)
+b1.pack() # (why is this needed?)
+b1.grid(row=1,column=0) # place button here
 
-#e1 is an input of text that stores in Entry ()
+b2=Button(window,text="convert to ounces",command=kg_to_oz)
+b2.pack()
+b2.grid(row=1,column=1)
+
+b3=Button(window,text="convert to grams",command=kg_to_grams)
+b3.pack()
+b3.grid(row=1,column=2)
+
+# e1 is an input of text that stores in Entry ()
 e1 = Entry(window,textvariable=e1_value)
 # e1.pack() isn't needed for non-buttons
-e1.grid(row=0,column=1)
+e1.grid(row=0,column=0)
 
 # t1 is going to record values
 t1=Text(window,height=1,width=10) # t1 is a text area on the right side
-t1.grid(row=1,column=0)
+t1.grid(row=0,column=2)
 
 
 
