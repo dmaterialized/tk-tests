@@ -61,6 +61,21 @@ e1.grid(row=0,column=0)
 t1=Text(window,height=1,width=10) # t1 is a text area on the right side
 t1.grid(row=0,column=2)
 
+# how to set up a label?
+# l1=Label("kg")
+# l1.grid(row=0,column=1)
+
+# TODO
+# remains to be done:
+# convert to all three values automatically
+# layout is intended to be either
+#   |"kg" | text | convert |
+#   |val1  | val2  |  val3 |
+# or:
+#   |convert | text | "kg" |
+#   |  val1  | val2 | val3 |
+#   |
+#
 
 
 window.mainloop() #required for all windows to draw
