@@ -81,9 +81,19 @@ t3.grid(row=1,column=2)
 # how to set up a label?
 # l1=Label("kg")
 # l1.grid(row=0,column=1)
+# apparently it's
 
+l1=Label(window,text="Grams")
+l1.grid(row=2,column=0)
 
+l2=Label(window,text="Pounds")
+l2.grid(row=2,column=1)
 
+l3=Label(window,text="Ounces")
+l3.grid(row=2,column=2)
+
+l4=Label(window,text="kg")
+l4.grid(row=0,column=2)
 # TODO
 # remains to be done:
 # - convert to all three values automatically
