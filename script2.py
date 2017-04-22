@@ -36,9 +36,9 @@ def kg_to_grams():
 
 
 def convert_from_kg():
-    gram=float(e2_value.get())*1000
-    pound=float(e2_value.get())*2.20462
-    ounce=float(e2_value.get())*35.274
+    gram=float(e1_value.get())*1000
+    pound=float(e1_value.get())*2.20462
+    ounce=float(e1_value.get())*35.274
     t1.insert(END,gram)
     t2.insert(END,pound)
     t3.insert(END,ounce)
@@ -70,21 +70,31 @@ e1.grid(row=0,column=1)
 
 # t1 is going to record values
 t1=Text(window,height=1,width=10) # t1 is a text area on the right side
-t1.grid(row=0,column=1)
+t1.grid(row=1,column=0)
+
+t2=Text(window,height=1,width=10)
+t2.grid(row=1,column=1)
+
+t3=Text(window,height=1,width=10)
+t3.grid(row=1,column=2)
 
 # how to set up a label?
 # l1=Label("kg")
 # l1.grid(row=0,column=1)
 
+
+
 # TODO
 # remains to be done:
-# convert to all three values automatically
-# layout is intended to be either
-#   |"kg" | text | convert |
-#   |val1  | val2  |  val3 |
-# or:
-#   |convert | text | "kg" |
-#   |  val1  | val2 | val3 |
+# - convert to all three values automatically
+# - layout is intended to be either
+#   0       1       2
+# 0  |"kg" | text | convert |
+# 1  |val1  | val2  |  val3 |
+# - or:
+#       0       1       2
+# 0  |convert | text | "kg" |
+# 1  |  val1  | val2 | val3 |
 #   |
 #
 
