@@ -20,7 +20,7 @@ window=Tk() # create the window
 def kg_to_pound():
     print(e1_value.get()) # print whatever's in e1
     pounds=float(e1_value.get())*2.20462 # convert to pounds
-    t1.insert(END,pounds) # in t1, insert that amount
+    t1.insert(END,pounds) # in t1, insert that amount at the end
 
 # convert to ounces
 def kg_to_oz():
@@ -67,14 +67,17 @@ b1.grid(row=0,column=0) # place button here
 e1 = Entry(window,textvariable=e1_value)
 # e1.pack() isn't needed for non-buttons
 e1.grid(row=0,column=1)
+# middle
 
 # t1 is going to record values
 t1=Text(window,height=1,width=10) # t1 is a text area on the right side
 t1.grid(row=1,column=0)
 
+# bottom middle
 t2=Text(window,height=1,width=10)
 t2.grid(row=1,column=1)
 
+# bottom right
 t3=Text(window,height=1,width=10)
 t3.grid(row=1,column=2)
 
@@ -85,13 +88,13 @@ t3.grid(row=1,column=2)
 
 l1=Label(window,text="Grams")
 l1.grid(row=2,column=0)
-
+#
 l2=Label(window,text="Pounds")
 l2.grid(row=2,column=1)
-
+#
 l3=Label(window,text="Ounces")
 l3.grid(row=2,column=2)
-
+#
 l4=Label(window,text="kg")
 l4.grid(row=0,column=2)
 # TODO
