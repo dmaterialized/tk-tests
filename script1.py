@@ -5,7 +5,7 @@
 # \
 # /
 # \
-from tkinter import *
+from tkinter import * # all funcs
 
 # ==== i n i t   w i n d o w =============================
 window=Tk() # init tkinter window
@@ -20,8 +20,8 @@ def km_to_miles():
     # 3. # END enters new text into a text area, but at the end of any existing text.
     miles = float(e1_value.get())*1.6
 #   ^^ ||| the trouble spot ||| ^^
-#   edit: was referencing e1.value, not e1_value.
-#   lesson learned.
+#          edit: was referencing e1.value, not e1_value.
+#          lesson learned.
     t1.insert(END,miles)
 
 b1 = Button(window,text="String Execute",command=km_to_miles)
