@@ -1,8 +1,8 @@
 # \ button to convert km unit to miles
-# / v: 1.0
-# \
-# /
-# \
+# / version: 1.1
+# \ date: 2017.05.02
+# / initial:
+# \ TODO: none
 # /
 # \
 from tkinter import * # all funcs

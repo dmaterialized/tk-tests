@@ -7,14 +7,12 @@ from tkinter import *
 window=Tk() # create the window
 
 # set up the functions
-
 # ================
 # conversions:
 # 1 kg = 1000 grams
 # 1 kg = 2.20462 pounds
 # 1 kg = 35.274 ounces
 # ==================
-
 
 # convert to pounds
 def kg_to_pound():
@@ -99,16 +97,8 @@ l4=Label(window,text="kg")
 l4.grid(row=0,column=2)
 # TODO
 # remains to be done:
-# - convert to all three values automatically
-# - layout is intended to be either
-#   0       1       2
-# 0  |"kg" | text | convert |
-# 1  |val1  | val2  |  val3 |
-# - or:
-#       0       1       2
-# 0  |convert | text | "kg" |
-# 1  |  val1  | val2 | val3 |
-#   |
+# determine how subsequent searches can properly replace existing the values (only first search works correctly)
+#
 #
 
 
